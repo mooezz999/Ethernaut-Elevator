@@ -7,9 +7,8 @@ contract Elevator {
     bool public top;
     uint public floor;
 
-    function getTop() public returns (bool) {
-        return top;
-        emit topValue(top);
+    function getTop() public{ 
+       emit topValue(top);
     }
 
     function goTo(uint _floor) public {
